@@ -1,0 +1,30 @@
+
+body{
+    color: $color-secondray;
+    font-size: $font-defualt;
+    font-family: 'Lato', sans-serif;
+}
+
+
+.heading__primary {
+    font-size: 1.8rem;
+    color:rgba($color-secondray,.6);
+    margin: 2.5rem 2.5rem 1rem 2.5rem;
+    text-transform:capitalize;
+}
+
+.heading__secondary {
+    text-transform: capitalize;
+    margin-top: .7rem;
+    margin-left: 1rem;
+    font-weight: bolder;
+}
+
+.heading__tertiary{
+    font-size: $font-defualt;
+    text-transform:capitalize;
+    color:rgba($color-secondray,.6);
+    position: relative;
+    top: -1.5rem;
+    left: 4rem;
+}

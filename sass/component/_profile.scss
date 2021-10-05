@@ -1,0 +1,75 @@
+
+    .profile{
+        width: 100%;
+        display: flex;
+        padding: 1rem 0rem 0rem 2rem ;
+
+        &:not(:last-child){
+            margin-bottom: .5rem;
+        }
+
+        &__shape{
+            width: 3.5rem;
+            height: 3.5rem;
+            object-fit: cover;
+            clip-path: circle(50% at 50% 50%);
+            color: transparent;
+
+            
+            &-icolor{
+                display: inline-block;
+                height:100%;
+                width: 100%;
+                font-size: 3rem;
+                margin-left: .3rem;
+                background-image:linear-gradient(to right,$color-tertiary-2 ,$color-tertiary-3) ;
+                -webkit-background-clip: text;
+            }
+
+            &-ibg{
+                display: inline-block;
+                height:100%;
+                width: 100%;
+                font-size: 3rem;
+                margin-left: .3rem;
+                background-image:linear-gradient(to top,$color-tertiary-4 , $color-tertiary-5) ;
+                -webkit-background-clip: text;
+            }
+
+            &-iarr{
+                color: $color-secondray;
+                transform: translateY(.5rem);
+            }
+        }
+        
+        &--img{
+            height: 100%;
+            transform: translateX(-.9rem) scale(2);
+            object-fit: cover;
+        }
+
+        &--img2{ 
+            height: 100%;
+            transform: translateX(0rem) scale(2);
+            object-fit: cover;
+        }
+
+        &--online {
+            display: inline-block;
+            height: 8px;
+            width: 8px;
+            border-radius: 50%;
+            background: $color-tertiary-3;
+            position: relative;
+            top: 2.6rem;
+            left: -1.1rem;
+        }
+
+        &__shape2{
+            width: 3.5rem;
+            height: 3.5rem;
+            object-fit: cover;
+            clip-path: polygon(10% 0, 89% 0, 100% 13%, 100% 89%, 91% 100%, 10% 99%, 0 87%, 0 12%);
+            color: transparent;
+        }
+    }

@@ -1,0 +1,28 @@
+// rgb(66,103,178)
+// #898F9C
+// #000000
+
+//COLOR
+$color-primary:hsl(0, 100%, 100%);
+$color-primary-dark:#898F9C;
+$color-primary-dark-2:#727680;
+$color-secondray :rgba(0, 0, 0, 0.8);
+$color-secondray-light :rgba(0, 0, 0, 0.55);
+$color-tertiary:rgb(70, 118, 214);
+$color-tertiary-2:#01f7ff;
+$color-tertiary-3:#07a188;
+$color-tertiary-4: #cc2b5e;
+$color-tertiary-5:#753a88;
+
+
+// GRID 
+$grid-width:100%;
+$gutter-horizantal:2rem;
+$gutter-vertical:1.5rem;
+
+
+//FONT 
+$font-defualt:1.6rem;
+
+//BOX-SHODOW
+$shadow:0px 2px 5px rgba($color-secondray,.2);

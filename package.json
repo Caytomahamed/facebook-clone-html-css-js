@@ -1,0 +1,17 @@
+{
+  "name": "facebook-clone-html-css",
+  "version": "1.0.0",
+  "description": "waxaan samaynay naa facebook clone ",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "cayto",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  },
+  "dependencies": {
+    "material-icons": "^1.6.1"
+  }
+}

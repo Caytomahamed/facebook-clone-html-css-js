@@ -1,0 +1,144 @@
+
+.side{
+  
+    &--scroll{
+        width: 100%;    
+        padding: 1rem 0rem 1.5rem 0rem ;
+        height: 90vh;
+        overflow: hidden;
+        position: sticky;
+        overflow-y: auto;
+        overflow-x: hidden; 
+   
+        
+    }
+        
+            
+
+    .side__top{
+        width: 100%;
+        padding: rem 0rem 1.5rem 0rem ;
+        &__sv{
+            width: 29rem;
+            padding: 0rem 2rem;
+            background: $color-primary;
+            margin: 1rem auto;
+            box-shadow:  .05px  .05px 3px rgba($color-secondray,.2),
+                        -.05px -.0000001px 1px rgba($color-secondray,.2);
+            height: 28rem;
+            border-radius: 1rem;
+
+        &__detial{
+            width: 100%;
+            height: 100%;
+            position: relative;
+
+
+            &__video{
+                display:block;
+                width: 100%;
+                height: auto;
+                display: block;
+                position: absolute;
+                top: 1rem;
+                left:0;
+                border-radius: 1rem;
+            }
+            
+            &__live{
+                display: inline-block;
+                background: rgb(233, 58, 58);
+                text-transform:capitalize;
+                border-radius: 3px;
+                padding:3px 1rem;
+                font-size: 2rem;
+                color: $color-primary;
+                position: absolute;
+                top: 2rem;
+                left: 1rem;
+                z-index: 10;
+            }
+
+            &__count {
+                color: $color-primary;
+                display: inline-block;
+                position: absolute;
+                top: 2.5rem;
+                left: 8rem;
+                background: $color-secondray-light;
+                padding: 0 .5rem;
+                border-radius: 3px;
+                z-index: 10;
+
+                &--icon {         
+                    display: inline-block;   
+                    font-size: 2rem;
+                    transform: translateY(2px);
+                }
+
+                &--onLive{
+                    font-size: 1.8rem;
+                    display: inline-block;
+                    transform: translateY(-2px);
+
+                }
+            }
+        }
+
+        }
+    }
+
+    .side__middle{
+
+        &__sponoredImg{
+            display: inline-block;
+            width: 100%;
+            height: auto;
+            border-radius: 2rem;
+        }
+
+        &__link {
+            font-size: 1.2rem;
+            text-transform:capitalize;
+            text-decoration: none;
+        }
+    }
+
+    .side__bottom {
+        &__copy__right{
+            display: flex;
+            flex-wrap: wrap;
+            color: $color-primary-dark;
+            font-size: 1.3rem;
+            padding: 1rem 0rem 0rem 2rem ;
+            text-transform:capitalize;
+            margin-top: 1rem;
+
+            &__links{
+                list-style-type:none;
+                &--value{
+                    display: inline-block;
+                    text-transform:capitalize;
+                    margin-right: 1.66rem;
+                    color: inherit;
+                    font-size: 1.3rem;
+                    text-decoration: none;
+
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+           
+        }
+
+    }
+
+    
+}
+
+
+.post{
+    // background: red;
+    height: 90vh;
+}
