@@ -18,11 +18,17 @@ $color-tertiary-5:#753a88;
 // GRID 
 $grid-width:100%;
 $gutter-horizantal:2rem;
-$gutter-vertical:1.5rem;
 
+$gutter-vertical:1.5rem;
 
 //FONT 
 $font-defualt:1.6rem;
 
+//BORDER RADIUS
+$font-border-radius: 1rem;
+
+
 //BOX-SHODOW
+$shadow-main: .05px  .05px 3px rgba($color-secondray,.2),
+-.05px -.0000001px 1px rgba($color-secondray,.2);
 $shadow:0px 2px 5px rgba($color-secondray,.2);

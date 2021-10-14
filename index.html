@@ -4,67 +4,106 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SIMPLEBAR  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css"/>
+
+    <!-- material-icons -->
     <link href="node_modules/material-icons/iconfont/material-icons.css" rel="stylesheet">
+
+     <!-- css  -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- icon title  -->
     <link rel="icon" href="img/fb-logo.jpg" type="image/x-icon">
+
+    <!-- Google <font></font> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- title -->
     <title>Face-book clone</title>
+
 </head>
 <body>
 
-    <header class="header">
-        <div class="row">
-            <div class="col-1-of-4">
-                <div class="logo_box">
-                    <i class="material-icons facebook_icon">facebook</i> 
-                    <i class="material-icons search_icon">search</i> 
+    <header class="u-fixed-position z-index-huge ">
+        <div class="header">
+            <div class="row">
+                <div class="col-1-of-5">
+                    <div class="logo_box">
+                        <i class="material-icons facebook_icon">facebook</i> 
+                        <i class="material-icons search_icon">search</i> 
+                    </div>
                 </div>
-            </div>
 
-            <div class="col-2-of-4">
-                <div class="nav_icons">
-                    <a href="#" class="nav"><i class="material-icons-outlined nav_menu">home</i></a>
-                    <a href="#" class="nav"><i class="material-icons-outlined nav_menu">ondemand_video </i>
-                        <span class="nav__badge">31+</span>
-                    </a>
-                    <a href="#" class="nav"><i class="material-icons-outlined nav_menu">store</i></a>
-                    <a href="#" class="nav"><i class="material-icons nav_menu"> groups</i>
-                        <span class="nav__badge">6+</span>
-                    </a>
-                    <a href="#" class="nav"><i class="material-icons nav_menu">extension</i>
-                        <span class="nav__badge">19+</span>
-                    </a>
+                <div class="col-2-of-4">
+                    <div class="nav_icons">
+                        <a href="#" class="nav"><i class="material-icons-outlined nav_menu">home</i></a>
+                        <a href="#" class="nav"><i class="material-icons-outlined nav_menu">ondemand_video </i>
+                            <span class="nav__badge">31+</span>
+                        </a>
+                        <a href="#" class="nav"><i class="material-icons-outlined nav_menu">store</i></a>
+                        <a href="#" class="nav"><i class="material-icons nav_menu"> groups</i>
+                            <span class="nav__badge">6+</span>
+                        </a>
+                        <a href="#" class="nav"><i class="material-icons nav_menu">extension</i>
+                            <span class="nav__badge">19+</span>
+                        </a>
+                    </div>
                 </div>
-            </div>
 
-            <div class="col-1-of-4">
-                <div class="main_icons">
-                    <a href="#" class="nav"><span class="material-icons   main_icons--icon">apps</span>
-                    </a>
-                    <a href="#" class="nav"><span class="material-icons   main_icons--icon">chat</span>
-                        <span class="main_icons__badge">7+</span>
-                    </a>
-                    <a href="#" class="nav"><span class="material-icons   main_icons--icon">notifications</span>
-                        <span class="main_icons__badge">20+</span>
-                    </a>
-                    <a href="#" class="nav">
-                        <span class="material-icons main_icons--icon-drop">arrow_drop_down</span>
-                    </a>
+                <div class="col-1-of-4">
+                    <div class="row">
+                        <div class="col-1-of-4 margin__right-md">
+                            <figure class="profile ">
+                                <div class="profile__shape">
+                                        <img src="img/nat-8.jpg" alt="profile" class="profile--img">
+                                </div>
+                                <figcaption class="heading__secondary">cayto </figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="col-3-of-4 margin__top-small1">
+                            <div class="row">
+                                <div class="col-1-of-4">
+                                    <a href="#" class="nav"><span class="material-icons   main_icons--icon">apps</span>
+                                    </a>
+                                </div>
+                                <div class="col-1-of-4">
+                                    <a href="#" class="nav"><span class="material-icons   main_icons--icon">chat</span>
+                                        <span class="main_icons__badge">7+</span>
+                                    </a>
+                                </div>
+                                <div class="col-1-of-4">
+                                    <a href="#" class="nav"><span class="material-icons   main_icons--icon">notifications</span>
+                                        <span class="main_icons__badge">20+</span>
+                                    </a>
+                                </div>
+                                <div class="col-1-of-4">
+                                    <a href="#" class="nav">
+                                    <span class="material-icons main_icons--icon">arrow_drop_down</span>
+                                </a>
+                            `   </div>
+                            </div>
+                           
+                    
+                        </div>
+                       
+                    </div>       
                 </div>
+         
             </div>
         </div>
     </header>
     
 
-    <main>
+    <main class="">
         <div class="row">
-
             <!-- left section -->
             <div class="col-1-of-4">
-                <section class="side">
-                    <div class="side--scroll">
+                <section class="side margin__top-huge data-simplebar">
+
                         <div class="side__top">
                             <figure class="profile">
                                 <div class="profile__shape">
@@ -140,13 +179,6 @@
                                 <figcaption class="heading__secondary">freecodecamp</figcaption>
                             </figure>
 
-                            <figure class="profile">
-                                <div class="profile__shape profile__shape2">
-                                    <i class="material-icons profile__shape-icolor"> groups</i>
-                                </div>
-                                <figcaption class="heading__secondary">singles - dating - friendship worldwide</figcaption>
-                            </figure>
-
                             <ul class="side__bottom__copy__right">
                                 <li class="side__bottom__copy__right__links"><a href="#" class="side__bottom__copy__right__links--value">privacy</a></li>
                                 <li class="side__bottom__copy__right__links"><a href="#" class="side__bottom__copy__right__links--value">terms</a></li>
@@ -157,56 +189,142 @@
                                 <li class="side__bottom__copy__right__links">facebook &copy; 2021</li>
                             </ul>
                         </div>
-                    </div>
                 </section>
             </div>
      
             <!-- main section  -->
             <div class="col-2-of-4">
-                <section class="main">
-                        <div class="row">
-                            <div class="col-1-of-5">
-                                <div class="story">
-                                    
+                <section class="margin__top-huge">
+                     <div class="row">
+                         <div class="col-1-of-5">
+                             <div class="story">
+                                 <div class="story__bg">
+                                     
+                                 </div>
+                                <div class="story__added">
+                                    <span class="material-icons story__added__iadd">add</span>
+                                    <p class="story__added__para">greate story</p>
                                 </div>
-                            </div>
-                    </div>
+                                
+                             </div>
+                         </div>
 
+                         <div class="col-1-of-5">
+                             <div class="story">
+                                 <div class="story__fnStory">
+                                        <img src="../img/post.png" alt="story" class="story__fnStory__img">
+                                 </div>
+                                 
+                                <figure class="profile margin__left-md story__profile">
+                                    <div class="profile__shape ">
+                                            <img src="img/img3.jpg" alt="profile" class="profile--img2">
+                                    </div>
+                                    <span class="profile--online"></span>
+                                </figure>     
+                                <p class="story__added__para2 margin__left-md-1">greate story</p>
+                             </div>
+                         </div>
+
+                         <div class="col-1-of-5">
+                             <div class="story">
+                                 <div class="story__fnStory">
+                                        <img src="../img/img4.jpg" alt="story" class="story__fnStory__img">
+                                 </div>
+                                 
+                                <figure class="profile margin__left-md story__profile">
+                                    <div class="profile__shape ">
+                                            <img src="img/img5.jpg" alt="profile" class="profile--img2">
+                                    </div>
+                                </figure>    
+                                <p class="story__added__para2 margin__left-md-1">greate story</p>
+                             </div>
+                         </div>
+
+                         <div class="col-1-of-5">
+                             <div class="story">
+                                 <div class="story__fnStory">
+                                        <img src="../img/img7.jpg" alt="story" class="story__fnStory__img">
+                                 </div>
+                                 
+                                <figure class="profile margin__left-md story__profile">
+                                    <div class="profile__shape ">
+                                            <img src="img/img17.jpg" alt="profile" class="profile--img2">
+                                    </div>
+                                </figure>  
+                                <p class="story__added__para2 margin__left-md-1">greate story</p>   
+                             </div>
+                         </div>
+
+                         <div class="col-1-of-5">
+                             <div class="story">
+                                 <div class="story__fnStory">
+                                        <img src="../img/img10.jpg" alt="story" class="story__fnStory__img">
+                                 </div>
+                                 
+                                <figure class="profile margin__left-md story__profile">
+                                    <div class="profile__shape ">
+                                            <img src="img/img6.jpg" alt="profile" class="profile--img2">
+                                    </div>
+                                    <span class="profile--online"></span>
+                                </figure>     
+                                <p class="story__added__para2 margin__left-md-1">greate story</p>
+                             </div>
+                         </div>
+                     </div>
+
+                     <section class="main">
+                            <div class="main__creatPost">
+                               <div class="main__creatPost--text">
+                    
+                                            <div class="profile__shape transform">
+                                                    <img src="img/nat-8.jpg" alt="profile" class="profile--img">
+                                            </div>
+                      
+                                        <input type="text" class="main__creatPost__input">
+                
+                              
+                                   
+                               </div>
+                               <div class="main__creatPost--more">
+                                    intput
+                               </div>
+                            </div>
+                     </section>
                 </section>
             </div>
             
             <!-- right section  -->
             
             <div class="col-1-of-4">
-                <section class="side">
-                    <div class="side--scroll">
+                <section class="side margin__top-huge">
                         <div class="side__top">
                             <div class="side__top__sv">
-                                <figure class="profile margin__left-small">
+                                <figure class="profile margin__left-md">
                                     <div class="profile__shape">
-                                        <span class="material-icons profile__shape-icolor md-size">extension</span>
+                                        <span class="material-icons profile__shape-icolor ">extension</span>
                                     </div>
-                                    <figcaption class="heading__secondary margin__top-small">news</figcaption>
+                                    <figcaption class="heading__secondary">cayto mahamed</figcaption>
                                 </figure>
-                                
+                                <h4 class="heading__tertiary">Suggested Live Video</h4>
                                 <div class="side__top__sv__detial">
-                                    <h4 class="heading__tertiary">Suggested Live Video</h4>
+                                   
                                     <span class="side__top__sv__detial__live">live</span>
                                     <span class="side__top__sv__detial__count">
                                     <span class="material-icons side__top__sv__detial__count--icon" >visibility </span>
                                     <span class="side__top__sv__detial__count--onLive">4.6k</span>
                                     </span>
-                                    <video width="320" height="240" muted loop  class="side__top__sv__detial__video">
+
+                                    <video muted loop  class="side__top__sv__detial__video">
                                         <source src="img/video.mp4" type="video/mp4">
                                         <source src="img/video.webm" type="video/webm">
                                         Your browser does not support the video tag.
                                     </video>
 
-                                    <figure class="profile margin__top-huge margin__left-small-1">
+                                    <figure class="profile">
                                         <div class="profile__shape">
-                                                <img src="img/img9.png" alt="profile" class="profile--img">
+                                                <img src="img/nat-8.jpg" alt="profile" class="profile--img">
                                         </div>
-                                        <figcaption class="heading__secondary ">BBC somali</figcaption>
+                                        <figcaption class="heading__secondary">cayto mahamed</figcaption>
                                     </figure>
                                 </div>
                                 
@@ -256,7 +374,7 @@
                                             <span class="material-icons main_icons--icon-drop margin__top-medium color">more_horiz</span>
                                         </div>
                                     </div>
-                                    <!-- dialpad -->
+                           
                                 </div>
                                
                             </div>
@@ -340,7 +458,6 @@
                             </figure>
 
                         </div>
-                    </div>
                 </section>
             </div>
 
@@ -381,5 +498,7 @@
         <div class="col-1-of-4">col-1-of-4</div>
         <div class="col-3-of-4">col-3-of-4</div>
     </div> -->
+
+    <script  src="inde.js"></script>
 </body>
 </html>

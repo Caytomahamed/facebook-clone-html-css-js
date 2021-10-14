@@ -1,9 +1,11 @@
 .header{
-    background: $color-primary;
-    box-shadow: $shadow;
+    width: 100vw;
     padding: 3px;
+    background: $color-primary;
+    box-shadow: $shadow-main;
+    z-index:100;
 
-
+    
     .logo_box{
         margin-left: 2rem;
     }
@@ -65,48 +67,22 @@
     }
     
     .main_icons {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 0 5rem;
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
-
+       
         &--icon {
-            font-size: 3rem;
+            font-size: 2.5rem;
             position: relative;
-            color: rgba($color-secondray,75);
-
-            &-drop{
-                font-size: 4rem;
-                color: rgba($color-secondray,75);
-
-                &::before{
-                    content: '';
-                    position: absolute;
-                    top: -2%;
-                    height: 4rem;
-                    width: 4rem;
-                    clip-path: circle(50% at 50% 50%);
-                    display:block;
-                    z-index: -1;
-                    background: rgba($color-primary-dark,.3);
-                }
-            }
+            color: rgba($color-secondray,7);
+            position: relative;
+            top: 35%;
 
             &::before{
                 content: '';
-                position: absolute;
-                top: -8%;
-                left: -13%;
-                height: 4rem;
-                width: 4rem;
+                height: 3.7rem;
+                width: 3.7rem;
+                @include abCenter;
                 clip-path: circle(50% at 50% 50%);
-                display:block;
-                z-index: -1;
-                transform: translate(-4%,-10%);
                 background: rgba($color-primary-dark,.3);
+
             }
         }
 
@@ -121,6 +97,10 @@
             color: white;
         }
      
+    }
+
+    &__main--link{
+        display: flex;
     }
 
 

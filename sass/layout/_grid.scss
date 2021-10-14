@@ -1,6 +1,6 @@
 
 .row {
-    width: $grid-width;
+    max-width: $grid-width;
     display: flex;
 
     &:not(:last-child){
@@ -26,12 +26,7 @@
     }
 
 
-    .col-1-of-4 {
-        width: calc((100% - #{$gutter-horizantal}) /4);
-    }
-
     .col-1-of-5 {
-        background: red; 
         width: calc((100% - #{$gutter-horizantal}) /5);
     }
 

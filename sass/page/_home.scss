@@ -1,48 +1,34 @@
 
 .side{
-  
-    &--scroll{
-        width: 100%;    
-        padding: 1rem 0rem 1.5rem 0rem ;
-        height: 90vh;
-        overflow: hidden;
-        position: sticky;
-        overflow-y: auto;
-        overflow-x: hidden; 
-   
-        
-    }
-        
-            
+    width: 100%;    
+    padding: 1rem 0rem 1.5rem 2rem ;
+    height: 90vh;
+ 
 
     .side__top{
         width: 100%;
         padding: rem 0rem 1.5rem 0rem ;
+        
         &__sv{
-            width: 29rem;
-            padding: 0rem 2rem;
+            width: 90%;
             background: $color-primary;
             margin: 1rem auto;
-            box-shadow:  .05px  .05px 3px rgba($color-secondray,.2),
-                        -.05px -.0000001px 1px rgba($color-secondray,.2);
+            box-shadow: $shadow-main;
             height: 28rem;
-            border-radius: 1rem;
-
-        &__detial{
-            width: 100%;
-            height: 100%;
+            border-radius: $font-border-radius;
             position: relative;
 
+        &__detial{
+            width: 90%;
+            margin: 0 auto;
+            height: 50%;
+            position: relative;
 
             &__video{
-                display:block;
-                width: 100%;
-                height: auto;
-                display: block;
-                position: absolute;
-                top: 1rem;
-                left:0;
-                border-radius: 1rem;
+                display: inline-block;
+                width:100%;
+                height: 100%;
+                border-radius: $font-border-radius;
             }
             
             &__live{
@@ -51,10 +37,10 @@
                 text-transform:capitalize;
                 border-radius: 3px;
                 padding:3px 1rem;
-                font-size: 2rem;
+                font-size: $font-defualt;
                 color: $color-primary;
                 position: absolute;
-                top: 2rem;
+                top: 1.5rem;
                 left: 1rem;
                 z-index: 10;
             }
@@ -62,22 +48,22 @@
             &__count {
                 color: $color-primary;
                 display: inline-block;
-                position: absolute;
-                top: 2.5rem;
-                left: 8rem;
                 background: $color-secondray-light;
                 padding: 0 .5rem;
+                position: absolute;
+                top: 1.8rem;
+                left: 8rem;
                 border-radius: 3px;
                 z-index: 10;
 
-                &--icon {         
+                &--icon {       
+                    font-size: $font-defualt; 
                     display: inline-block;   
-                    font-size: 2rem;
-                    transform: translateY(2px);
+                    transform: translateY(3px);
                 }
 
                 &--onLive{
-                    font-size: 1.8rem;
+                    font-size: $font-defualt;
                     display: inline-block;
                     transform: translateY(-2px);
 
@@ -89,12 +75,13 @@
     }
 
     .side__middle{
+            position: relative;
 
         &__sponoredImg{
             display: inline-block;
             width: 100%;
             height: auto;
-            border-radius: 2rem;
+            border-radius:$font-border-radius;
         }
 
         &__link {
@@ -138,7 +125,31 @@
 }
 
 
-.post{
+.main{
+    width: 85%;
+    margin: 0 auto;
+    height: auto;
     // background: red;
-    height: 90vh;
+    padding: 1rem;
+
+    &__creatPost{
+        background: $color-primary;
+        box-shadow: $shadow-main;
+        border-radius: $font-border-radius;
+        width: 100%;
+        display: flex;
+
+        &__input{
+            width: 90%;
+            // margin-top: -1r;
+        }
+        &--text{
+
+        }
+
+        &--more{
+
+        }
+    }
+
 }

@@ -2,7 +2,9 @@
     .profile{
         width: 100%;
         display: flex;
-        padding: 1rem 0rem 0rem 2rem ;
+        padding: 1rem 0rem 0rem 0rem ;
+        cursor: pointer;
+        position: relative;
 
         &:not(:last-child){
             margin-bottom: .5rem;
