@@ -1,155 +1,160 @@
+.side {
+  width: 100%;
+  padding: 1rem 0rem 1.5rem 2rem;
+  height: 90vh;
 
-.side{
-    width: 100%;    
-    padding: 1rem 0rem 1.5rem 2rem ;
-    height: 90vh;
- 
+  .side__top {
+    width: 100%;
+    padding: 1rem 0rem 1.5rem 0rem;
 
-    .side__top{
-        width: 100%;
-        padding: rem 0rem 1.5rem 0rem ;
-        
-        &__sv{
-            width: 90%;
-            background: $color-primary;
-            margin: 1rem auto;
-            box-shadow: $shadow-main;
-            height: 28rem;
-            border-radius: $font-border-radius;
-            position: relative;
+    &__sv {
+      width: 90%;
+      background: $color-primary;
+      margin: 1rem auto;
+      box-shadow: $shadow-main;
+      height: 28rem;
+      border-radius: $font-border-radius;
+      position: relative;
 
-        &__detial{
-            width: 90%;
-            margin: 0 auto;
-            height: 50%;
-            position: relative;
+      &__detial {
+        width: 90%;
+        margin: 0 auto;
+        height: 100%;
+        position: relative;
+        border-radius: $font-border-radius;
+        overflow: hidden;
 
-            &__video{
-                display: inline-block;
-                width:100%;
-                height: 100%;
-                border-radius: $font-border-radius;
-            }
-            
-            &__live{
-                display: inline-block;
-                background: rgb(233, 58, 58);
-                text-transform:capitalize;
-                border-radius: 3px;
-                padding:3px 1rem;
-                font-size: $font-defualt;
-                color: $color-primary;
-                position: absolute;
-                top: 1.5rem;
-                left: 1rem;
-                z-index: 10;
-            }
-
-            &__count {
-                color: $color-primary;
-                display: inline-block;
-                background: $color-secondray-light;
-                padding: 0 .5rem;
-                position: absolute;
-                top: 1.8rem;
-                left: 8rem;
-                border-radius: 3px;
-                z-index: 10;
-
-                &--icon {       
-                    font-size: $font-defualt; 
-                    display: inline-block;   
-                    transform: translateY(3px);
-                }
-
-                &--onLive{
-                    font-size: $font-defualt;
-                    display: inline-block;
-                    transform: translateY(-2px);
-
-                }
-            }
+        &__video {
+          display: block;
+          width: 100%;
+          height: 12rem;
+        //   display: none;
         }
 
+        &__live {
+          display: inline-block;
+          background: rgb(233, 58, 58);
+          text-transform: capitalize;
+          border-radius: 3px;
+          padding: 3px 1rem;
+          font-size: $font-defualt;
+          color: $color-primary;
+          position: absolute;
+          top: 1.5rem;
+          left: 1rem;
+          z-index: 10;
         }
-    }
 
-    .side__middle{
-            position: relative;
+        &__count {
+          color: $color-primary;
+          display: inline-block;
+          background: $color-secondray-light;
+          padding: 0 0.5rem;
+          position: absolute;
+          top: 1.8rem;
+          left: 8rem;
+          border-radius: 3px;
+          z-index: 10;
 
-        &__sponoredImg{
+          &--icon {
+            font-size: $font-defualt;
             display: inline-block;
-            width: 100%;
-            height: auto;
-            border-radius:$font-border-radius;
-        }
+            transform: translateY(3px);
+          }
 
-        &__link {
-            font-size: 1.2rem;
-            text-transform:capitalize;
-            text-decoration: none;
+          &--onLive {
+            font-size: $font-defualt;
+            display: inline-block;
+            transform: translateY(-2px);
+          }
         }
+      }
     }
 
-    .side__bottom {
-        &__copy__right{
-            display: flex;
-            flex-wrap: wrap;
-            color: $color-primary-dark;
-            font-size: 1.3rem;
-            padding: 1rem 0rem 0rem 2rem ;
-            text-transform:capitalize;
-            margin-top: 1rem;
+    .simplebar-scrollbar:before {
+      background: red;
+    }
+  }
 
-            &__links{
-                list-style-type:none;
-                &--value{
-                    display: inline-block;
-                    text-transform:capitalize;
-                    margin-right: 1.66rem;
-                    color: inherit;
-                    font-size: 1.3rem;
-                    text-decoration: none;
+  .side__middle {
+    position: relative;
 
-                    &:hover{
-                        text-decoration: underline;
-                    }
-                }
-            }
-           
-        }
-
+    &__sponoredImg {
+      display: inline-block;
+      width: 100%;
+      height: auto;
+      border-radius: $font-border-radius;
     }
 
-    
+    &__link {
+      font-size: 1.2rem;
+      text-transform: capitalize;
+      text-decoration: none;
+    }
+  }
+
+  .side__bottom {
+    &__copy__right {
+      display: flex;
+      flex-wrap: wrap;
+      color: $color-primary-dark;
+      font-size: 1.3rem;
+      padding: 1rem 0rem 0rem 2rem;
+      text-transform: capitalize;
+      margin-top: 1rem;
+
+      &__links {
+        list-style-type: none;
+        &--value {
+          display: inline-block;
+          text-transform: capitalize;
+          margin-right: 1.66rem;
+          color: inherit;
+          font-size: 1.3rem;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
 }
 
+.main {
+  width: 85%;
+  margin: 0 auto;
+  height: auto;
+  // background: red;
+  padding: 1rem;
 
-.main{
-    width: 85%;
-    margin: 0 auto;
-    height: auto;
-    // background: red;
+  &__creatPost {
+    background: $color-primary;
+    box-shadow: $shadow-main;
+    border-radius: $font-border-radius;
+    width: 100%;
     padding: 1rem;
+    height: auto;
 
-    &__creatPost{
-        background: $color-primary;
-        box-shadow: $shadow-main;
-        border-radius: $font-border-radius;
-        width: 100%;
-        display: flex;
-
-        &__input{
-            width: 90%;
-            // margin-top: -1r;
-        }
-        &--text{
-
-        }
-
-        &--more{
-
-        }
+    &--text {
+      display: flex;
+      justify-content: space-between;
     }
 
+    &__input {
+      width: 80%;
+      background: rgba($color-primary-dark, 0.2);
+      border: none;
+      border-radius: $font-border-radius2;
+      margin-right: 2rem;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    &--more {
+    }
+  }
 }

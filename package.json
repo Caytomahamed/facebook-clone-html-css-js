@@ -12,6 +12,7 @@
     "node-sass": "^6.0.1"
   },
   "dependencies": {
-    "material-icons": "^1.9.1"
+    "material-icons": "^1.9.1",
+    "simplebar": "^5.3.6"
   }
 }
